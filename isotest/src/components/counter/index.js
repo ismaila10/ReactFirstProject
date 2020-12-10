@@ -10,20 +10,16 @@ const Counter = () => {
     /*const increment = () => {
         setCounter(counter + 1)
     }*/
-    return ( <
-        div >
-        <
-        span > { counter } < /span> <
-        div >
-        <
-        button onClick = {
-            () => setCounter(counter - 1) } > - < /button> <
-        button onClick = {
-            () => setCounter(counter + 1) } > + < /button> <
-        /div>
+    return ( 
+        <div>
+            <span> { counter } </span> 
+            
+            <div>
+                <button onClick = {() => setCounter(counter - 1) } > - </button> 
+                <button onClick = {() => setCounter(counter + 1) } > + </button> 
+            </div>
 
-        <
-        /div>
+        </div>
     )
 }
 
