@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logo.svg';
 import './index.css';
+import PropTypes from 'prop-types';
 
 const Header = (props) => {
     //console.log(props)
@@ -21,6 +22,11 @@ const Header = (props) => {
         /a> <
         /header>
     )
+}
+
+
+Header.propTypes = {
+    label: PropTypes.string
 }
 
 export default Header
