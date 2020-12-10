@@ -2,7 +2,8 @@ import React from 'react'
 import logo from '../../assets/logo.svg';
 import './index.css';
 
-const Header = () => {
+const Header = (props) => {
+    //console.log(props)
     return ( <
         header className = "App-header" >
         <
@@ -10,8 +11,7 @@ const Header = () => {
         className = "App-logo"
         alt = "logo" / >
         <
-        p >
-        Edit < code > src / App.js < /code> and save to reload. <
+        p > { props.label } <
         /p> <
         a className = "App-link"
         href = "https://reactjs.org"
